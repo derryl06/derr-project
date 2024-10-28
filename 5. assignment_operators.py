@@ -1,6 +1,6 @@
 from os import system
-system("cls")
 import time
+system("cls")
 def main():
     print()
     while True: # for repeat until the input is integer//untuk mengulang input jika bukan integer/valueerror
@@ -8,6 +8,7 @@ def main():
             num = int(input("input first number: "))
             same = int(input("input second number: "))
         except ValueError:
+            print()
             print("Please input number only, try again!")
             time.sleep(3)
             system("cls")
